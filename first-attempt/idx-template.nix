@@ -1,4 +1,4 @@
-{ pkgs, apikey ? "missingkey", giturl ? "missingurl"... }: {
+{ pkgs, apikey ? "missingkey", giturl ? "missingurl",... }: {
   packages = [];
   bootstrap = ''
     mkdir -p "$WS_NAME"
