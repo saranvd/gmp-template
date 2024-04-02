@@ -1,5 +1,7 @@
 { pkgs, apikey ? "missingkey", giturl ? "missingurl",... }: {
-  packages = [];
+      packages = [
+			pkgs.git
+    ];
   bootstrap = ''
     mkdir -p "$WS_NAME"
     mkdir -p "$WS_NAME/.idx/"
