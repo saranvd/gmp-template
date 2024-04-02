@@ -17,5 +17,8 @@
         "type": "text",
         "default": "https://github.com/googlemaps-samples/android-samples"
       }
-    ]
+    ],
+    "host": {
+      "virtualization": "true"
+   }
   }
