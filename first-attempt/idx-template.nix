@@ -12,7 +12,6 @@
     chmod -R +w "$WS_NAME"
     mkdir -p "$WS_NAME/.idx/"
     cp -rf ${./dev.nix} "$WS_NAME/.idx/dev.nix"
-    sdkmanager --licenses
     mv "$WS_NAME" "$out"
   '';
 }
