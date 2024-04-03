@@ -23,11 +23,6 @@
       enable = true;
       previews = [
         {
-          command = ["./.flutter-sdk/flutter/bin/flutter" "run" "--machine" "-d" "web-server" "--web-hostname" "0.0.0.0" "--web-port" "$PORT"];
-          id = "web";
-          manager = "flutter";
-        }
-        {
           command = ["./.flutter-sdk/flutter/bin/flutter" "run" "--machine" "-d" "android" "-d" "localhost:5555"];
           id = "android";
           manager = "flutter";
