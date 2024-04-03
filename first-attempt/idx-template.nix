@@ -1,6 +1,6 @@
 { pkgs, apikey ? "missingkey", giturl ? "missingurl",... }: {
       packages = [
-			pkgs.git,
+			pkgs.git
       pkgs.sdkmanager
     ];
   bootstrap = ''
