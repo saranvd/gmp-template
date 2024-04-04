@@ -1,24 +1,36 @@
 {
-    "name": "API injection",
-    "description": "test template",
-    "categories": ["Backend"],
-    "icon": "https://www.gstatic.com/monospace/231115/logo_python.svg",
-    "publisher": "Sara Navidpour",
-    "params": [
-      {
-        "id": "apikey",
-        "name": "API KEY",
-        "type": "text",
-        "default": "fill key here"
-      },
-      {
-        "id": "giturl",
-        "name": "Git Url",
-        "type": "text",
-        "default": "https://github.com/googlemaps-samples/android-samples"
-      }
-    ],
-    "host": {
-      "virtualization": "true"
-   }
-  }
+  "name": "API injection",
+  "description": "test template",
+  "categories": ["Backend"],
+  "icon": "https://www.gstatic.com/monospace/231115/logo_python.svg",
+  "publisher": "Sara Navidpour",
+  "params": [
+    {
+      "id": "apikey",
+      "name": "API KEY",
+      "type": "text",
+      "default": "AIzaSyCFMsoZiOlpirkgX2lwp2x36qXVO62Oasg"
+    },
+    {
+      "id": "giturl",
+      "name": "Git Url",
+      "type": "text",
+      "default": "https://github.com/googlemaps-samples/android-samples"
+    },
+    {
+      "id": "subdir",
+      "name": "Project Subfolder",
+      "type": "text",
+      "default": "tutorials/java/MapWithMarker/"
+    },
+    {
+      "id": "launchactivity",
+      "name": "Android Activity to launch",
+      "type": "text",
+      "default": "com.example.mapwithmarker/.MapsMarkerActivity"
+    }
+  ],
+  "host": {
+    "virtualization": "true"
+ }
+}
