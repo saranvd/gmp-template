@@ -16,9 +16,12 @@
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
-        npm-install = "./gradlew :app:installDebug && adb -s emulator-5554 shell am start -n {{ launch_activity }}";
+        npm-install = "./gradlew :app:installDebug";
       };
       # To run something each time the environment is rebuilt, use the `onStart` hook
+      onStart = {
+        npm-install = "adb -s emulator-5554 shell am start -n {{ launch_activity }}";
+      };
     };
     previews = {
       enable = true;
