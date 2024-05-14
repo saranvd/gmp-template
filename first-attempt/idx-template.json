@@ -15,7 +15,7 @@
       "id": "giturl",
       "name": "Git Url",
       "type": "text",
-      "default": "https://github.com/saranvd/android-samples"
+      "default": "https://github.com/googlemaps-samples/android-samples"
     },
     {
       "id": "subdir",
