@@ -9,7 +9,7 @@
       "id": "apikey",
       "name": "API KEY",
       "type": "text",
-      "default": "AIzaSyCFMsoZiOlpirkgX2lwp2x36qXVO62Oasg"
+      "default": ""
     },
     {
       "id": "giturl",
