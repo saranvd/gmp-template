@@ -15,7 +15,7 @@
     find $WS_NAME -type f -name 'local.defaults.properties' -exec sed -i "s/\(MAPS_API_KEY=\).*/\1\"${apikey}\"/" {} \;
 
     # The maps samples seem to have really outdated versions of gradle. We simple search for all gradle properties files and upgrade the gradle distribution
-    # find $WS_NAME -type f -name 'gradle-wrapper.properties' -exec sed -i 's|distributionUrl=.*|distributionUrl=https\\://services.gradle.org/distributions/gradle-8.4-bin.zip|' {} \;
+    find $WS_NAME -type f -name 'gradle-wrapper.properties' -exec sed -i 's|distributionUrl=.*|distributionUrl=https\\://services.gradle.org/distributions/gradle-8.7-bin.zip|' {} \;
 
     chmod -R +w "$WS_NAME"
     mkdir -p "$WS_NAME/.idx/"
