@@ -22,11 +22,11 @@
     previews = {
       enable = true;
       previews = [
-        {
+        android = {
           command = ["./gradlew" "--continuous" "installDebug"];
-          id = "android";
-          manager = "flutter";
-        }
+          manager = "gradle";
+          activity = "{{ launch_activity }}";
+        };        
       ];
     };
   };
