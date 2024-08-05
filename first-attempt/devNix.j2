@@ -23,7 +23,7 @@
       enable = true;
       previews = [
         android = {
-          command = ["./gradlew" "--continuous" "installDebug"];
+          command = ["./gradlew" "--continuous" ":app:installDebug"];
           manager = "gradle";
           activity = "{{ launch_activity }}";
         };        
