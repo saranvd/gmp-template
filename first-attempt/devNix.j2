@@ -22,11 +22,11 @@
     previews = {
       enable = true;
       previews = [
-        android = {
-          command = ["./gradlew" ":app:installDebug"];
+        {
+          command = ["./gradlew :app:installDebug"];
+          id = "android";
           manager = "gradle";
-          activity = "{{ launch_activity }}";
-        };        
+        }
       ];
     };
   };
