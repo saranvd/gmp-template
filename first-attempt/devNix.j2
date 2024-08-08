@@ -5,10 +5,7 @@
   channel = "stable-23.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.nodePackages.firebase-tools
     pkgs.jdk21
-    pkgs.sdkmanager
-    pkgs.android-tools
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -16,16 +13,17 @@
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
-        npm-install = "./gradlew :app:installDebug && adb -s emulator-5554 shell am start -n {{ launch_activity }}";
+        wait-for-adb = "adb -s emulator-5554 wait-for-device"}";
       };
     };
     previews = {
       enable = true;
       previews = [
         {
-          command = ["./gradlew :app:installDebug"];
+          command = ["./gradlew" "--continuous" ":app:installDebug"];
           id = "android";
-          manager = "flutter";
+          manager = "gradle";
+          activity = "{{ launch_activity }}"
         }
       ];
     };
