@@ -11,9 +11,8 @@
   env = {};
   idx = {
     workspace = {
-      # Runs when a workspace is first created with this `dev.nix` file
-      onCreate = {
-        wait-for-adb = "adb -s emulator-5554 wait-for-device"}";
+      onStart = {
+        wait-for-adb = "adb -s emulator-5554 wait-for-device";
       };
     };
     previews = {
