@@ -5,7 +5,7 @@
   channel = "stable-23.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.jdk21
+    pkgs.jdk17
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -19,7 +19,7 @@
       enable = true;
       previews = [
         {
-          command = ["./gradlew" "--continuous" ":app:installDebug"];
+          command = ["./gradlew" "--continuous" "installDebug"];
           id = "android";
           manager = "gradle";
           activity = "{{ launch_activity }}";
