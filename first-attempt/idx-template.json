@@ -8,7 +8,8 @@
     {
       "id": "apikey",
       "name": "API KEY",
-      "type": "text"
+      "type": "text",
+      "default": ""
     },
     {
       "id": "giturl",
@@ -26,7 +27,7 @@
       "id": "launchactivity",
       "name": "Android Activity to launch",
       "type": "text",
-      "default": ""
+      "default": "com.example.mapwithmarker/.MapsMarkerActivity"
     }
   ],
   "host": {
