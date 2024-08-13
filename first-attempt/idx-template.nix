@@ -1,4 +1,4 @@
-{ pkgs, apikey ? "missingkey", giturl ? "missingurl", subdir ? "", launchactivity ? "",... }: {
+{ pkgs, apikey ? "", giturl ? "missingurl", subdir ? "", launchactivity ? "",... }: {
   packages = [
       pkgs.git
       pkgs.sdkmanager
