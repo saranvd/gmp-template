@@ -16,7 +16,8 @@
 
     # Create a secrets.properties file in the repo ane replace the MAPS_API_KEY property with said value
     touch secrets.properties
-    echo "MAPS_API_KEY='${apikey}'" > secrets.properties
+    echo "MAPS_API_KEY=DEFAULT_API_KEY" > secrets.properties
+    find $WS_NAME -type f -name 'secrets.properties' -exec sed -i "s/\(MAPS_API_KEY=\).*/\1\"${apikey}\"/" {} \;
 
     chmod -R +w "$WS_NAME"
     mkdir -p "$WS_NAME/.idx/"
